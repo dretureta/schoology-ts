@@ -88,6 +88,7 @@ COURSE_ID=456 npx tsx examples/export-grades.ts > grades.csv
 - [Getting Started Guide](./GUIDE.md) — Setup, authentication, and basic usage
 - [API Reference](./GUIDE.md#api-reference) — All available methods
 - [Changelog](./CHANGELOG.md) — Release history
+- [Contributing](./CONTRIBUTING.md) — GitFlow workflow and development guidelines
 
 ## Development
 
