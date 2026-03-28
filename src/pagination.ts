@@ -33,12 +33,12 @@ export async function* buildPaginatedIterator<T>(
   let hasMore = true;
 
   while (hasMore) {
-    const result = await fetcher(currentParams as PaginationParams);
+    const result = await fetcher(currentParams as PaginationParams & Record<string, unknown>);
     for (const item of result.data) {
       yield item;
     }
     if (result.links.next) {
-      currentParams = parseCursorParams(result.links.next);
+      currentParams = { ...currentParams, ...parseCursorParams(result.links.next) };
     } else {
       hasMore = false;
     }
