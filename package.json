@@ -12,6 +12,13 @@
       "types": "./dist/index.d.ts"
     }
   },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "GUIDE.md",
+    "CHANGELOG.md"
+  ],
   "scripts": {
     "build": "tsc && tsc -p tsconfig.build.json",
     "test": "vitest run",
