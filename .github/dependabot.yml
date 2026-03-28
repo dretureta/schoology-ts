@@ -12,8 +12,8 @@ updates:
       - "dependencies"
     # Solo crear PRs, no hacer merge automático
     # El equipo decide si.mergear manualmente
-    group:
-      production-dependencies:
+    groups:
+      production:
         dependency-type: "production"
-      development-dependencies:
+      development:
         dependency-type: "development"
