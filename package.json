@@ -1,6 +1,6 @@
 {
   "name": "schoology-ts",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "TypeScript client for Schoology API",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -27,7 +27,9 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.ts": ["tsc --noEmit"]
+    "*.ts": [
+      "tsc --noEmit"
+    ]
   },
   "keywords": [
     "schoology",
