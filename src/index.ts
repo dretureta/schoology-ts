@@ -1,8 +1,12 @@
-// Schoology API TypeScript Client
-export class SchoologyClient {
-  constructor(config: { apiKey: string; apiSecret: string }) {
-    if (!config.apiKey || !config.apiSecret) {
-      throw new Error('apiKey and apiSecret are required');
-    }
-  }
-}
+export { SchoologyClient } from './client.js';
+export type { SchoologyClientConfig, RequestOptions } from './client.js';
+export { SchoologyApiError, SchoologyAuthError } from './errors.js';
+export type { SchoologyListResponse, SchoologyLinks } from './types/index.js';
+export type { User } from './types/user.js';
+export type { Course } from './types/course.js';
+export type { Section } from './types/section.js';
+export type { Assignment } from './types/assignment.js';
+export type { Submission } from './types/submission.js';
+export type { Grade } from './types/grade.js';
+export type { Discussion } from './types/discussion.js';
+export type { Event } from './types/event.js';

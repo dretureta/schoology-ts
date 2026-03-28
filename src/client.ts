@@ -2,6 +2,13 @@ import { SchoologyApiError, SchoologyAuthError } from './errors.js';
 import { buildPaginatedIterator, PaginationParams } from './pagination.js';
 import { generateOAuthHeader } from './oauth.js';
 import { UsersResource } from './resources/users.js';
+import { CoursesResource } from './resources/courses.js';
+import { SectionsResource } from './resources/sections.js';
+import { AssignmentsResource } from './resources/assignments.js';
+import { SubmissionsResource } from './resources/submissions.js';
+import { GradesResource } from './resources/grades.js';
+import { DiscussionsResource } from './resources/discussions.js';
+import { EventsResource } from './resources/events.js';
 
 export interface SchoologyClientConfig {
   apiKey: string;
@@ -32,6 +39,13 @@ export class SchoologyClient implements SchoologyClientInterface {
     this.apiKey = config.apiKey;
     this.apiSecret = config.apiSecret;
     this.users = new UsersResource(this);
+    this.courses = new CoursesResource(this);
+    this.sections = new SectionsResource(this);
+    this.assignments = new AssignmentsResource(this);
+    this.submissions = new SubmissionsResource(this);
+    this.grades = new GradesResource(this);
+    this.discussions = new DiscussionsResource(this);
+    this.events = new EventsResource(this);
   }
 
   async request<T>(options: RequestOptions): Promise<T> {
@@ -114,6 +128,13 @@ export class SchoologyClient implements SchoologyClientInterface {
   }
 
   users: UsersResource;
+  courses: CoursesResource;
+  sections: SectionsResource;
+  assignments: AssignmentsResource;
+  submissions: SubmissionsResource;
+  grades: GradesResource;
+  discussions: DiscussionsResource;
+  events: EventsResource;
 
   private apiKey: string;
   private apiSecret: string;
