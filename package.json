@@ -24,12 +24,11 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "tsc --noEmit",
-    "prepare": "husky"
+    "prepare": "husky",
+    "release": "standard-version"
   },
   "lint-staged": {
-    "*.ts": [
-      "tsc --noEmit"
-    ]
+    "*.ts": ["tsc --noEmit"]
   },
   "keywords": [
     "schoology",
@@ -42,6 +41,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.4.0",
     "nock": "^14.0.11",
+    "standard-version": "^9.3.2",
     "typescript": "^6.0.2",
     "vitest": "^4.1.2"
   }
