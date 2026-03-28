@@ -4,7 +4,7 @@
 
 [![npm version](https://img.shields.io/npm/v/schoology-ts)](https://www.npmjs.com/package/schoology-ts)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Test Status](https://github.com/dretureta/schoology-ts/actions/workflows/test.yml/badge.svg)](https://github.com/dretureta/schoology-ts/actions)
+[![Test Status](https://github.com/dretureta/schoology-ts/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/dretureta/schoology-ts/actions/workflows/test.yml)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.4-blue)](https://www.typescriptlang.org/)
 [![node](https://img.shields.io/badge/node-18+-green)](https://nodejs.org/)
 
